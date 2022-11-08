@@ -191,7 +191,7 @@ dns:
 {% if default(request.school, "") == "1" %}
     - 10.0.0.11
 {% else %}
-    - https://a.iqiqcloud.com/dns-query
+    - https://b.vvvglass.com/iq
 {% endif %}
     - https://doh.pub/dns-query
     - https://223.5.5.5/dns-query
