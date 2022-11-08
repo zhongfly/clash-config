@@ -1,0 +1,11 @@
+# 内容：哔哩哔哩 海外
+# 国际版
+# PROCESS-NAME,com.bstar.intl
+DOMAIN-SUFFIX,biliintl.com
+DOMAIN-SUFFIX,bstarstatic.com
+DOMAIN-SUFFIX,bilibili.tv
+DOMAIN-SUFFIX,global.bilibili.com
+DOMAIN,upos-bstar-mirrorakam.akamaized.net
+DOMAIN,upos-bstar1-mirrorakam.akamaized.net
+# 海外版漫画
+DOMAIN-SUFFIX,bilibilicomics.com

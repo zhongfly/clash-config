@@ -1,0 +1,20 @@
+DOMAIN-SUFFIX,dmhy.org
+# google play
+# DOMAIN-SUFFIX,xn--ngstr-lra8j.com
+# DOMAIN-SUFFIX,services.googleapis.cn
+# Steam
+# DOMAIN-SUFFIX,steampowered.com
+# DOMAIN-SUFFIX,steamgames.com
+# DOMAIN-SUFFIX,steamcommunity.com
+# DOMAIN-SUFFIX,steam-chat.com
+# DOMAIN-SUFFIX,steamstatic.com
+# downloadly.ir
+DOMAIN,downloadly.ir
+# pica
+DOMAIN-SUFFIX,picacomic.com
+# jsdelivr
+DOMAIN,cdn.jsdelivr.net
+# qbittorrent
+DOMAIN-SUFFIX,qbittorrent.org
+# 蜜柑计划
+DOMAIN,mikanani.me

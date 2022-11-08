@@ -1,0 +1,283 @@
+version = 1
+[custom]
+enable_rule_generator = true
+overwrite_original_rules = true
+
+# Options for custom base configuration file
+clash_rule_base = "https://raw.githubusercontent.com/zhongfly/clash-config/master/clash.yml"
+#surge_rule_base = "base/surge.conf"
+#surfboard_rule_base = "base/surfboard.conf"
+#mellow_rule_base = "base/mellow.conf"
+#quan_rule_base = "base/quan.conf"
+#quanx_rule_base = "base/quanx.conf"
+
+# Options for adding emojis
+add_emoji = true
+remove_old_emoji = true
+
+# Options for filtering nodes
+#include_remarks = []
+exclude_remarks = ["(流量|时间|官网|产品|免费|耗尽|到期|订阅|更新)"]
+
+# 设置分组标志位
+[[custom_groups]]
+name = "🚀 节点选择"
+type = "select"
+rule = [
+    "[]♻️ 自动选择",
+    "[]🎯 全球直连",
+    ".*"
+]
+
+[[custom_groups]]
+name = "♻️ 自动选择"
+type = "url-test"
+rule = [".*"]
+url = "http://www.gstatic.com/generate_204"
+interval = 120
+tolerance = 100
+
+[[custom_groups]]
+name = "✴️ 负载均衡"
+type = "load-balance"
+rule = ["(^(?!.*(?i:SG|Singapore|新加坡|狮城|[^-]新)).*)"]
+interval = 120
+strategy = "round-robin"
+url = "http://www.gstatic.com/generate_204"
+
+[[custom_groups]]
+name = "📖 漫画"
+type = "select"
+rule = [
+    "[]✴️ 负载均衡",
+    "[]🚀 节点选择",
+    "[]🎯 全球直连",
+    "(^(?!.*(?i:JP|Japan|Tokyo|Osaka|Saitama|日本|东京|大阪|埼玉|[^-]日)).*)"
+]
+
+[[custom_groups]]
+name = "📺 哔哩哔哩主站"
+type = "select"
+rule = [
+        "[]🎯 全球直连",
+        "(?i:TW|Taiwan|台湾|[^-]台|新北|彰化)",
+        "(?i:HK|Hong.*?Kong|香港|[^-]港)",
+        "(?i:Macao|澳门)",
+        "(?i:SG|Singapore|新加坡|狮城|[^-]新)",
+        "(?i:\\bTH\\b|Thailand|泰国)",
+        "[]🚀 节点选择"
+]
+
+[[custom_groups]]
+name = "📺 哔哩哔哩海外"
+type = "select"
+rule = [
+        "(?i:SG|Singapore|新加坡|狮城|[^-]新)",
+        "(?i:\\bTH\\b|Thailand|泰国)",
+        "[]🚀 节点选择",
+        "[]🎯 全球直连"
+]
+
+[[custom_groups]]
+name = "Telegram"
+type = "select"
+rule = [
+    "[]🚀 节点选择",
+    "[]♻️ 自动选择",
+]
+
+[[custom_groups]]
+name = "🎯 全球直连"
+type = "select"
+rule = ["[]DIRECT"]
+
+[[custom_groups]]
+name = "🛑 全球拦截"
+type = "select"
+rule = ["[]REJECT", "[]DIRECT","[]🚀 节点选择",".*"]
+
+[[custom_groups]]
+name = "🐟 漏网之鱼"
+type = "select"
+rule = ["[]🚀 节点选择",
+"[]🎯 全球直连",
+"[]♻️ 自动选择"]
+# 设置分组标志位
+
+
+# 设置规则标志位
+[[rulesets]]
+group = "🎯 全球直连"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/LocalAreaNetwork.yaml"
+type = "clash-classic"
+
+# 个人规则
+#[[rulesets]]
+#group = "🛑 全球拦截"
+#ruleset = "https://raw.githubusercontent.com/zhongfly/clash-config/master/block.list"
+[[rulesets]]
+group = "🎯 全球直连"
+ruleset = "https://raw.githubusercontent.com/zhongfly/clash-config/master/Direct.list"
+[[rulesets]]
+group = "🚀 节点选择"
+ruleset = "https://raw.githubusercontent.com/zhongfly/clash-config/master/proxy.list"
+[[rulesets]]
+group = "📖 漫画"
+ruleset = "https://raw.githubusercontent.com/zhongfly/clash-config/master/comic.list"
+[[rulesets]]
+group = "📺 哔哩哔哩主站"
+ruleset = "https://raw.githubusercontent.com/zhongfly/clash-config/master/BilibiliHMT.list"
+[[rulesets]]
+group = "📺 哔哩哔哩海外"
+ruleset = "https://raw.githubusercontent.com/zhongfly/clash-config/master/BilibiliOverseas.list"
+
+# 广告拦截
+[[rulesets]]
+group = "🎯 全球直连"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/UnBan.yaml"
+type = "clash-classic"
+[[rulesets]]
+group = "🛑 全球拦截"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanAD.yaml"
+type = "clash-classic"
+[[rulesets]]
+group = "🛑 全球拦截"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanProgramAD.yaml"
+type = "clash-classic"
+[[rulesets]]
+group = "🛑 全球拦截"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanEasyListChina.yaml"
+type = "clash-classic"
+
+# 直连
+[[rulesets]]
+group = "🎯 全球直连"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/SteamCN.yaml"
+type = "clash-classic"
+[[rulesets]]
+group = "🎯 全球直连"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/GoogleCN.yaml"
+type = "clash-classic"
+
+# 代理
+[[rulesets]]
+group = "Telegram"
+ruleset = "https://github.com/ACL4SSR/ACL4SSR/raw/master/Clash/Providers/Ruleset/Telegram.yaml"
+type = "clash-classic"
+[[rulesets]]
+group = "🚀 节点选择"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ProxyLite.yaml"
+type = "clash-classic"
+[[rulesets]]
+group = "🚀 节点选择"
+ruleset = "https://github.com/ACL4SSR/ACL4SSR/raw/master/Clash/Providers/Ruleset/OneDrive.yaml"
+type = "clash-classic"
+
+
+# 直连
+[[rulesets]]
+group = "🎯 全球直连"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Microsoft.yaml"
+type = "clash-classic"
+[[rulesets]]
+group = "🎯 全球直连"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaCompanyIp.yaml"
+type = "clash-classic"
+[[rulesets]]
+group = "🎯 全球直连"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaDomain.yaml"
+type = "clash-classic"
+[[rulesets]]
+group = "🎯 全球直连"
+ruleset = "[]GEOIP,CN"
+
+[[rulesets]]
+group = "🐟 漏网之鱼"
+ruleset = "[]FINAL"
+# 设置规则标志位
+
+
+[[emoji]]
+match = "(Australia|Sydney|澳大利亚|澳洲|悉尼)"
+emoji = "🇦🇺"
+[[emoji]]
+match = "(Brazil|Paulo|巴西|圣保罗)"
+emoji = "🇧🇷"
+[[emoji]]
+match = "(?i:\\bCA[N]?\\b|Canada|Toronto|Montreal|Vancouver|加拿大|蒙特利尔|温哥华|楓葉|枫叶)"
+emoji = "🇨🇦"
+[[emoji]]
+match = "(?i:DE|Germany|法兰克福|德)"
+emoji = "🇩🇪"
+[[emoji]]
+match = "(?i:\\bFR[A]?\\b|France|Paris|法国|巴黎)"
+emoji = "🇫🇷"
+[[emoji]]
+match = "(?i:UK|England|United.*?Kingdom|London|英|伦敦)"
+emoji = "🇬🇧"
+[[emoji]]
+match = "(Italy|Milan|意大利|米兰)"
+emoji = "🇮🇹"
+[[emoji]]
+match = "(India|Mumbai|印度|孟买)"
+emoji = "🇮🇳"
+[[emoji]]
+match = "(柬埔寨|Cambodia)"
+emoji = "🇰🇭"
+[[emoji]]
+match = "(卢森堡|LU)"
+emoji = "🇱🇺"
+[[emoji]]
+match = "(?i:JP|Japan|Tokyo|Osaka|Saitama|日本|东京|大阪|埼玉|[^-]日)"
+emoji = "🇯🇵"
+[[emoji]]
+match = "(?i:KR|Korea|KOR|首尔|韩|韓)"
+emoji = "🇰🇷"
+[[emoji]]
+match = "(Macao|澳门|CTM)"
+emoji = "🇲🇴"
+[[emoji]]
+match = "(墨西哥|Mexico)"
+emoji = "🇲🇽"
+[[emoji]]
+match = "(Malaysia|马来西亚)"
+emoji = "🇲🇾"
+[[emoji]]
+match = "(?i:\\bNL[D]?\\b|Netherlands|荷兰|阿姆斯特丹)"
+emoji = "🇳🇱"
+[[emoji]]
+match = "(Philippines|菲律宾)"
+emoji = "🇵🇭"
+[[emoji]]
+match = "(?i:RU|Russia|Moscow|Petersburg|Siberia|伯力|莫斯科|圣彼得堡|西伯利亚|新西伯利亚|哈巴罗夫斯克|俄|毛子)"
+emoji = "🇷🇺"
+[[emoji]]
+match = "乌克兰"
+emoji = "🇺🇦"
+[[emoji]]
+match = "(?i:SG|Singapore|新加坡|狮城|[^-]新)"
+emoji = "🇸🇬"
+[[emoji]]
+match = "(?i:\\bTH\\b|Thailand|泰国|曼谷|泰)"
+emoji = "🇹🇭"
+[[emoji]]
+match = "(?i:TW|Taiwan|台湾|[^-]台)"
+emoji = "🇨🇳"
+[[emoji]]
+match = "(?i:US|America|United.*?States|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥)"
+emoji = "🇺🇸"
+[[emoji]]
+match = "(?i:\\bUAE\\b|Dubai|阿联酋|迪拜)"
+emoji = "🇦🇪"
+[[emoji]]
+match = "(Argentina|阿根廷)"
+emoji = "🇦🇷"
+[[emoji]]
+match = "(Vietnam|越南|越)"
+emoji = "🇻🇳"
+[[emoji]]
+match = "(Turkey|土耳其|伊斯坦布尔)"
+emoji = "🇹🇷"
+[[emoji]]
+match = "(?i:HK|Hong.*?Kong|HKT|HKBN|HGC|WTT|CMI|港)"
+emoji = "🇭🇰"
