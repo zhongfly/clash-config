@@ -34,7 +34,7 @@ name = "♻️ 自动选择"
 type = "url-test"
 rule = [".*"]
 url = "http://www.gstatic.com/generate_204"
-interval = 120
+interval = 60
 tolerance = 100
 
 [[custom_groups]]
