@@ -188,7 +188,7 @@ dns:
   # 所有 DNS 请求将会直接发送到服务器，不经过任何代理。
   # Clash 会使用最先获得的解析记录回复 DNS 请求
   nameserver:
-    - https://cn-east.lele233.com/cdn
+    - https://cn-east.iqiqzz.com/cdn
     - 119.29.29.29
     - https://223.5.5.5/dns-query
 
