@@ -6,14 +6,11 @@ DOMAIN-SUFFIX,cdndm5.com
 DOMAIN-SUFFIX,hamreus.com
 DOMAIN-SUFFIX,manhuagui.com
 # copymanga
-DOMAIN-SUFFIX,copymanga.org
-DOMAIN-SUFFIX,copymanga.com
-DOMAIN-SUFFIX,copymanga.info
-DOMAIN-SUFFIX,copymanga.net
-DOMAIN-SUFFIX,copymanga.site
 DOMAIN,mirror.mangafunc.fun
 DOMAIN,mirror2.mangafunc.fun
 DOMAIN,hi77-overseas.mangafuna.xyz
+DOMAIN-KEYWORD,mangacopy
+DOMAIN-KEYWORD,copymanga
 # cocomanhua
 DOMAIN-SUFFIX,cocomanga.com
 # happymh
