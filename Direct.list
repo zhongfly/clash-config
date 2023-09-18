@@ -23,10 +23,6 @@ DOMAIN,steamuserimages-a.akamaihd.net
 # DOMAIN-SUFFIX,cloudflare.steamstatic.com
 # IPv6
 IP-CIDR6,::/0
-# 学术
-DOMAIN-SUFFIX,sae.org
-DOMAIN,journals.sagepub.com
-DOMAIN,sage.cnpereading.com
 #直连进程
 PROCESS-NAME,QQ.exe
 PROCESS-NAME,TXPlatform.exe
@@ -46,3 +42,7 @@ DOMAIN,upos-hz-mirrorakam.akamaized.net
 DOMAIN-SUFFIX,acgdmzy.com
 # 小众软件
 DOMAIN-SUFFIX,appinn.com
+# tracker
+DOMAIN-KEYWORD,announce
+DOMAIN-KEYWORD,torrent
+DOMAIN-KEYWORD,tracker
