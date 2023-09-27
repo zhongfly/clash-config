@@ -17,7 +17,7 @@ remove_old_emoji = true
 
 # Options for filtering nodes
 #include_remarks = []
-exclude_remarks = ["(流量|时间|官网|产品|免费|耗尽|到期|订阅|更新|群组)"]
+exclude_remarks = ["(流量|时间|官网|产品|免费|耗尽|到期|订阅|更新|群组|剩余)"]
 
 # 设置分组标志位
 [[custom_groups]]
