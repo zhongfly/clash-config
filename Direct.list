@@ -46,3 +46,6 @@ DOMAIN-SUFFIX,appinn.com
 DOMAIN-KEYWORD,announce
 DOMAIN-KEYWORD,torrent
 DOMAIN-KEYWORD,tracker
+# fcm
+DOMAIN-SUFFIX,mtalk.google.com
+DOMAIN-KEYWORD,mtalk.google.com
