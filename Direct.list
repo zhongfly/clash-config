@@ -46,3 +46,5 @@ DOMAIN-SUFFIX,appinn.com
 DOMAIN-KEYWORD,announce
 DOMAIN-KEYWORD,torrent
 DOMAIN-KEYWORD,tracker
+# byr
+DOMAIN-SUFFIX, byr.su
