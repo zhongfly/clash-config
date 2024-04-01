@@ -32,7 +32,7 @@ rule = [
 [[custom_groups]]
 name = "♻️ 自动选择"
 type = "url-test"
-rule = ["(^(?!.*(?i:\\s\\d+x|朝鲜|尼日利亚)).*)"]
+rule = ["(^(?!.*(?i:\\s\\d+x|朝鲜|尼日利亚|warp|oracle)).*)"]
 url = "http://www.gstatic.com/generate_204"
 interval = 60
 tolerance = 100
