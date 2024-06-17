@@ -32,7 +32,7 @@ rule = [
 [[custom_groups]]
 name = "♻️ 自动选择"
 type = "url-test"
-rule = ["(^(?!.*(?i:\\s\\d+x|朝鲜|尼日利亚|warp|WARP|Oracle|Aeza)).*)"]
+rule = ["(^(?!.*(?i:\\s\\d+x|朝鲜|尼日利亚|warp|WARP|Oracle|Aeza|新疆)).*)"]
 url = "http://www.gstatic.com/generate_204"
 interval = 30
 tolerance = 100
@@ -40,7 +40,7 @@ tolerance = 100
 [[custom_groups]]
 name = "✴️ 负载均衡"
 type = "load-balance"
-rule = ["(^(?!.*(?i:SG|Singapore|新加坡|狮城|[^-]新|朝鲜|尼日利亚)).*)"]
+rule = ["(^(?!.*(?i:SG|Singapore|新加坡|狮城|[^-]新|朝鲜|尼日利亚|新疆)).*)"]
 interval = 60
 strategy = "round-robin"
 url = "http://www.gstatic.com/generate_204"
