@@ -25,6 +25,7 @@ name = "🚀 节点选择"
 type = "select"
 rule = [
     "[]♻️ 自动选择",
+    "[]♻️ 低倍率自动选择",
     "[]🎯 全球直连",
     ".*"
 ]
@@ -84,14 +85,6 @@ rule = [
         "(?i:\\bTH\\b|Thailand|泰国)",
         "[]🚀 节点选择",
         "[]🎯 全球直连"
-]
-
-[[custom_groups]]
-name = "Telegram"
-type = "select"
-rule = [
-    "[]🚀 节点选择",
-    "[]♻️ 自动选择",
 ]
 
 [[custom_groups]]
@@ -169,7 +162,7 @@ type = "clash-classic"
 
 # 代理
 [[rulesets]]
-group = "Telegram"
+group = "🚀 节点选择"
 ruleset = "https://github.com/ACL4SSR/ACL4SSR/raw/master/Clash/Providers/Ruleset/Telegram.yaml"
 type = "clash-classic"
 [[rulesets]]
