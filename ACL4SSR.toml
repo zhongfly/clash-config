@@ -38,6 +38,14 @@ interval = 30
 tolerance = 100
 
 [[custom_groups]]
+name = "♻️ 低倍率自动选择"
+type = "url-test"
+rule = ["(?i:0\\.\\d)"]
+url = "http://www.gstatic.com/generate_204"
+interval = 30
+tolerance = 100
+
+[[custom_groups]]
 name = "✴️ 负载均衡"
 type = "load-balance"
 rule = ["(^(?!.*(?i:SG|Singapore|新加坡|狮城|[^-]新|朝鲜|尼日利亚|新疆)).*)"]
