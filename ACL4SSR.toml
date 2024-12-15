@@ -157,8 +157,7 @@ type = "clash-domain"
 # 代理
 [[rulesets]]
 group = "🚀 节点选择"
-ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/gfw.yaml"
-type = "clash-domain"
+ruleset = "[]GEOSITE,geolocation-!cn"
 
 # IP类规则
 [[rulesets]]
