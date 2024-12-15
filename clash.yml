@@ -88,8 +88,8 @@ dns:
     - 119.29.29.29
     - 114.114.114.114
   nameserver:
-    - https://dns.nextdns.io/5d264d
-    - https://cloudflare-dns.com/dns-query
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16 # Fake IP 地址池 (CIDR 形式)
   # 在以下列表的域名将不会被解析为 fake ip，这些域名相关的解析请求将会返回它们真实的 IP 地址
@@ -99,10 +99,10 @@ dns:
     - 'dns.msftncsi.com'
     - 'www.msftncsi.com'
     - 'www.msftconnecttest.com'
-  nameserver-policy:
-    geosite:cn:
-      - 223.5.5.5
-      - 119.29.29.29
+  # nameserver-policy:
+  #   geosite:cn:
+  #     - 223.5.5.5
+  #     - 119.29.29.29
 
 tun:
   enable: false
