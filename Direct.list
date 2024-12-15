@@ -11,15 +11,10 @@ PROCESS-NAME,QQScLauncher.exe
 DOMAIN-SUFFIX,jandan.net
 # 其乐社区
 DOMAIN-SUFFIX,keylol.com
-# bilibili
-DOMAIN,upos-hz-mirrorakam.akamaized.net
 # 轻书架
 DOMAIN-SUFFIX,acgdmzy.com
-# 小众软件
-DOMAIN-SUFFIX,appinn.com
 # tracker
 DOMAIN-KEYWORD,announce
-DOMAIN-KEYWORD,torrent
 DOMAIN-KEYWORD,tracker
 # byr
 DOMAIN-SUFFIX, byr.su
