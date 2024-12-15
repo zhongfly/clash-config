@@ -107,15 +107,7 @@ rule = ["[]🚀 节点选择",
 
 
 # 设置规则标志位
-[[rulesets]]
-group = "🎯 全球直连"
-ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/LocalAreaNetwork.yaml"
-type = "clash-classic"
-
 # 个人规则
-#[[rulesets]]
-#group = "🛑 全球拦截"
-#ruleset = "https://raw.githubusercontent.com/zhongfly/clash-config/master/block.list"
 [[rulesets]]
 group = "🎯 全球直连"
 ruleset = "https://raw.githubusercontent.com/zhongfly/clash-config/master/Direct.list"
@@ -126,75 +118,64 @@ ruleset = "https://raw.githubusercontent.com/zhongfly/clash-config/master/proxy.
 group = "📖 漫画"
 ruleset = "https://raw.githubusercontent.com/zhongfly/clash-config/master/comic.list"
 [[rulesets]]
-group = "📺 哔哩哔哩主站"
-ruleset = "https://raw.githubusercontent.com/zhongfly/clash-config/master/BilibiliHMT.list"
-[[rulesets]]
 group = "📺 哔哩哔哩海外"
-ruleset = "https://raw.githubusercontent.com/zhongfly/clash-config/master/BilibiliOverseas.list"
+ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/biliintl.yaml"
+type = "clash-domain"
+[[rulesets]]
+group = "📺 哔哩哔哩"
+ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/bilibili.yaml"
+type = "clash-domain"
+
+[[rulesets]]
+group = "🎯 全球直连"
+ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.yaml"
+type = "clash-domain"
 
 # 广告拦截
 [[rulesets]]
-group = "🎯 全球直连"
-ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/UnBan.yaml"
-type = "clash-classic"
-[[rulesets]]
 group = "🛑 全球拦截"
-ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanAD.yaml"
-type = "clash-classic"
-[[rulesets]]
-group = "🛑 全球拦截"
-ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanProgramAD.yaml"
-type = "clash-classic"
-[[rulesets]]
-group = "🛑 全球拦截"
-ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanEasyListChina.yaml"
-type = "clash-classic"
+ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ads-all.yaml"
+type = "clash-domain"
 
 # 直连
 [[rulesets]]
 group = "🎯 全球直连"
-ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/SteamCN.yaml"
-type = "clash-classic"
+ruleset = "[]GEOSITE,cn"
 [[rulesets]]
 group = "🎯 全球直连"
-ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/GoogleCN.yaml"
-type = "clash-classic"
+ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-games@cn.yaml"
+type = "clash-domain"
+[[rulesets]]
+group = "🎯 全球直连"
+ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft@cn.yaml"
+type = "clash-domain"
+[[rulesets]]
+group = "🎯 全球直连"
+ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google@cn.yaml"
+type = "clash-domain"
 
 # 代理
 [[rulesets]]
 group = "🚀 节点选择"
-ruleset = "https://github.com/ACL4SSR/ACL4SSR/raw/master/Clash/Providers/Ruleset/Telegram.yaml"
-type = "clash-classic"
+ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/gfw.yaml"
+type = "clash-domain"
+
+# IP类规则
+[[rulesets]]
+group = "🎯 全球直连"
+ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/private.yaml"
+type = "clash-ipcidr"
 [[rulesets]]
 group = "🚀 节点选择"
-ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ProxyLite.yaml"
-type = "clash-classic"
-[[rulesets]]
-group = "🚀 节点选择"
-ruleset = "https://github.com/ACL4SSR/ACL4SSR/raw/master/Clash/Providers/Ruleset/OneDrive.yaml"
-type = "clash-classic"
-
-
-# 直连
-[[rulesets]]
-group = "🎯 全球直连"
-ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Microsoft.yaml"
-type = "clash-classic"
-[[rulesets]]
-group = "🎯 全球直连"
-ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaCompanyIp.yaml"
-type = "clash-classic"
-[[rulesets]]
-group = "🎯 全球直连"
-ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaDomain.yaml"
-type = "clash-classic"
+ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/telegram.yaml"
+type = "clash-ipcidr"
 [[rulesets]]
 group = "🎯 全球直连"
 ruleset = "[]GEOIP,CN"
 
 [[rulesets]]
 group = "🐟 漏网之鱼"
-ruleset = "[]FINAL"
+ruleset = "[]MATCH"
 # 设置规则标志位
 
 
