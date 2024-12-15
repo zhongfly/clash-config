@@ -79,56 +79,32 @@ profile:
 dns:
   enable: true
   listen: :53
-  ipv6: true # 当此选项为 false 时, AAAA 请求将返回空
-
+  ipv6: true
+  use-hosts: true
   # 以下填写的 DNS 服务器将会被用来解析 DNS 服务的域名
   # 仅填写 DNS 服务器的 IP 地址
   default-nameserver:
     - 223.5.5.5
-    - 114.114.114.114
-  enhanced-mode: fake-ip # 或 redir-host
+    - 119.29.29.29
+    - tls://1.12.12.12
+  nameserver:
+    - tls://1.1.1.1
+    - tls://8.8.8.8
+    - https://cloudflare-dns.com/dns-query
+    - https://dns.google/dns-query
+  enhanced-mode: redir-host
   fake-ip-range: 198.18.0.1/16 # Fake IP 地址池 (CIDR 形式)
-  use-hosts: true # 查询 hosts 并返回 IP 记录
-
   # 在以下列表的域名将不会被解析为 fake ip，这些域名相关的解析请求将会返回它们真实的 IP 地址
   fake-ip-filter:
     - '*.lan'
-    - '*.localdomain'
-    - '*.example'
-    - '*.invalid'
-    - '*.localhost'
-    - '*.test'
-    - '*.local'
-    - '*.home.arpa'
-    - 'time.*.com'
-    - 'time.*.gov'
-    - 'time.*.edu.cn'
-    - 'time.*.apple.com'
-    - 'ntp.*.com'
-    - '*.time.edu.cn'
-    - '*.ntp.org.cn'
-    - '+.pool.ntp.org'
-    - 'time1.cloud.tencent.com'
-  nameserver:
-    - 119.29.29.29
-    - 180.184.1.1
-    - 223.5.5.5
-  # fallback:
-  #   - https://dns.google/dns-query
-  fallback-filter:
-    geoip: false
-  #   geoip-code: CN
-  #   ipcidr:
-  #     - 240.0.0.0/4
-  #   domain:
-  #     - '+.google.com'
-  #     - '+.facebook.com'
-  #     - '+.youtube.com'
-      
-  # Lookup domains via specific nameservers
-  # nameserver-policy:
-  #   'www.baidu.com': '114.114.114.114'
-  #   '+.internal.crop.com': '10.0.0.1'
+    - 'localhost.ptlogin2.qq.com'
+    - 'dns.msftncsi.com'
+    - 'www.msftncsi.com'
+    - 'www.msftconnecttest.com'
+  nameserver-policy:
+    "geosite:cn":
+      - https://doh.pub/dns-query
+      - https://dns.alidns.com/dns-query
 
 tun:
   enable: false
