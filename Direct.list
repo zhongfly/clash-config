@@ -1,28 +1,5 @@
-# 内容：Steam可直连域名
-# DOMAIN,csgo.wmsj.cn
-# DOMAIN,dota2.wmsj.cn
-# DOMAIN,wmsjsteam.com
-# DOMAIN,dl.steam.clngaa.com
-# DOMAIN,dl.steam.ksyna.com
-# DOMAIN,st.dl.bscstorage.net
-# DOMAIN,st.dl.eccdnx.com
-# DOMAIN,st.dl.pinyuncloud.com
-# DOMAIN,steampipe.steamcontent.tnkjmec.com
-# DOMAIN,steampowered.com.8686c.com
-# DOMAIN,steamstatic.com.8686c.com
-DOMAIN,steambroadcast.akamaized.net
-DOMAIN,steamcdn-a.akamaihd.net
-DOMAIN,steamcommunity-a.akamaihd.net
-DOMAIN,steamstore-a.akamaihd.net
-DOMAIN,steamusercontent-a.akamaihd.net
-DOMAIN,steamuserimages-a.akamaihd.net
-# DOMAIN,steampipe.akamaized.net
-# DOMAIN-SUFFIX,steamcontent.com
-# DOMAIN-SUFFIX,steamstat.us
-# DOMAIN-SUFFIX,steamusercontent.com
-# DOMAIN-SUFFIX,cloudflare.steamstatic.com
 # IPv6
-IP-CIDR6,::/0
+# IP-CIDR6,::/0
 #直连进程
 PROCESS-NAME,QQ.exe
 PROCESS-NAME,TXPlatform.exe
@@ -34,8 +11,6 @@ PROCESS-NAME,QQScLauncher.exe
 DOMAIN-SUFFIX,jandan.net
 # 其乐社区
 DOMAIN-SUFFIX,keylol.com
-# 拷贝漫画
-DOMAIN,cdn.xsskc.com
 # bilibili
 DOMAIN,upos-hz-mirrorakam.akamaized.net
 # 轻书架
@@ -49,5 +24,5 @@ DOMAIN-KEYWORD,tracker
 # byr
 DOMAIN-SUFFIX, byr.su
 # 八叉
-DOMAIN-SUFFIX,www.8xsk.org
+DOMAIN-SUFFIX,8xsk.org
 DOMAIN-SUFFIX,833330.xyz
