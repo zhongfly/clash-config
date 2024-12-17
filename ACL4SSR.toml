@@ -149,10 +149,10 @@ type = "clash-domain"
 group = "🎯 全球直连"
 ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft@cn.yaml"
 type = "clash-domain"
-[[rulesets]]
-group = "🎯 全球直连"
-ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google@cn.yaml"
-type = "clash-domain"
+# [[rulesets]]
+# group = "🎯 全球直连"
+# ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google@cn.yaml"
+# type = "clash-domain"
 
 # 代理
 [[rulesets]]
