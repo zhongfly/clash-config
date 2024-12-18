@@ -137,21 +137,23 @@ group = "🛑 全球拦截"
 ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ads-all.yaml"
 type = "clash-domain"
 
+# Google 全部代理
+[[rulesets]]
+group = "🚀 节点选择"
+ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google@cn.yaml"
+type = "clash-domain"
+
 # 直连
 [[rulesets]]
 group = "🎯 全球直连"
 ruleset = "[]GEOSITE,cn"
-[[rulesets]]
-group = "🎯 全球直连"
-ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-games@cn.yaml"
-type = "clash-domain"
-[[rulesets]]
-group = "🎯 全球直连"
-ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft@cn.yaml"
-type = "clash-domain"
 # [[rulesets]]
 # group = "🎯 全球直连"
-# ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google@cn.yaml"
+# ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-games@cn.yaml"
+# type = "clash-domain"
+# [[rulesets]]
+# group = "🎯 全球直连"
+# ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft@cn.yaml"
 # type = "clash-domain"
 
 # 代理
