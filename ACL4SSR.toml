@@ -36,6 +36,8 @@ rule = [
     "[]自动选择",
     "[]低倍率自动选择",
 ]
+url = "http://www.gstatic.com/generate_204"
+interval = 60
 
 [[custom_groups]]
 name = "自动选择"
