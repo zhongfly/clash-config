@@ -25,6 +25,7 @@ name = "🚀 节点选择"
 type = "select"
 rule = [
     "[]♻️ 自动",
+    "[]自动选择",
     "[]🎯 全球直连",
     ".*"
 ]
@@ -42,7 +43,7 @@ interval = 30
 [[custom_groups]]
 name = "自动选择"
 type = "url-test"
-rule = ["(^(?!.*(?i:\\s\\d+x|朝鲜|尼日利亚|warp|WARP|Oracle|Aeza|新疆)).*)"]
+rule = ["(^(?!.*(?i:\\s\\d+x|朝鲜|尼日利亚|warp|WARP|Oracle|Aeza|新疆|0\\.\\d)).*)"]
 url = "http://www.gstatic.com/generate_204"
 interval = 30
 tolerance = 100
@@ -69,6 +70,7 @@ type = "select"
 rule = [
     "[]✴️ 负载均衡",
     "[]🚀 节点选择",
+    "[]自动选择",
     "[]🎯 全球直连",
     "(^(?!.*(?i:JP|Japan|Tokyo|Osaka|Saitama|日本|东京|大阪|埼玉|[^-]日)).*)"
 ]
