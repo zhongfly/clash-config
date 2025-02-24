@@ -38,14 +38,15 @@ rule = [
     "[]自动选择",
 ]
 url = "http://www.gstatic.com/generate_204"
-interval = 15
+interval = 30
+lazy = false
 
 [[custom_groups]]
 name = "自动选择"
 type = "url-test"
 rule = ["(^(?!.*(?i:\\s\\d+x|朝鲜|尼日利亚|warp|WARP|Oracle|Aeza|新疆|0\\.\\d)).*)"]
 url = "http://www.gstatic.com/generate_204"
-interval = 30
+interval = 60
 tolerance = 100
 
 [[custom_groups]]
@@ -53,8 +54,9 @@ name = "低倍率自动选择"
 type = "url-test"
 rule = ["(?i:0\\.\\d)"]
 url = "http://www.gstatic.com/generate_204"
-interval = 30
+interval = 60
 tolerance = 100
+lazy = false
 
 [[custom_groups]]
 name = "✴️ 负载均衡"
