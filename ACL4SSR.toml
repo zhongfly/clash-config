@@ -132,37 +132,44 @@ group = "📖 漫画"
 ruleset = "https://raw.githubusercontent.com/zhongfly/clash-config/master/comic.list"
 [[rulesets]]
 group = "📺 哔哩哔哩海外"
-ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/biliintl.yaml"
-type = "clash-domain"
+ruleset = "[]GEOSITE,biliintl"
+# ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/biliintl.yaml"
+# type = "clash-domain"
 [[rulesets]]
 group = "📺 哔哩哔哩"
-ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/bilibili.yaml"
-type = "clash-domain"
+ruleset = "[]GEOSITE,bilibili"
+# ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/bilibili.yaml"
+# type = "clash-domain"
 
 [[rulesets]]
 group = "🎯 全球直连"
-ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.yaml"
-type = "clash-domain"
+ruleset = "[]GEOSITE,private"
+# ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.yaml"
+# type = "clash-domain"
 
 # 广告拦截
 [[rulesets]]
 group = "🛑 全球拦截"
-ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ads-all.yaml"
-type = "clash-domain"
+ruleset = "[]GEOSITE,category-ads-all"
+# ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ads-all.yaml"
+# type = "clash-domain"
 
 # 类型直连
 [[rulesets]]
 group = "🎯 全球直连"
-ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-games@cn.yaml"
-type = "clash-domain"
+ruleset = "[]GEOSITE,category-games@cn"
+# ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-games@cn.yaml"
+# type = "clash-domain"
 [[rulesets]]
 group = "🎯 全球直连"
-ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft@cn.yaml"
-type = "clash-domain"
+ruleset = "[]GEOSITE,microsoft@cn"
+# ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft@cn.yaml"
+# type = "clash-domain"
 [[rulesets]]
 group = "🚀 节点选择"
-ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google@cn.yaml"
-type = "clash-domain"
+ruleset = "[]GEOSITE,google@cn"
+# ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google@cn.yaml"
+# type = "clash-domain"
 
 # 代理
 [[rulesets]]
@@ -177,12 +184,14 @@ ruleset = "[]GEOSITE,cn"
 # IP类规则
 [[rulesets]]
 group = "🎯 全球直连"
-ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/private.yaml"
-type = "clash-ipcidr"
+ruleset = "[]GEOIP,private"
+# ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/private.yaml"
+# type = "clash-ipcidr"
 [[rulesets]]
 group = "🚀 节点选择"
-ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/telegram.yaml"
-type = "clash-ipcidr"
+ruleset = "[]GEOIP,telegram"
+# ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/telegram.yaml"
+# type = "clash-ipcidr"
 [[rulesets]]
 group = "🎯 全球直连"
 ruleset = "[]GEOIP,CN"
