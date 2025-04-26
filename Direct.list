@@ -7,6 +7,9 @@ PROCESS-NAME,WeChat.exe
 PROCESS-NAME,WeChatApp.exe
 PROCESS-NAME,WeChatWeb.exe
 PROCESS-NAME,QQScLauncher.exe
+# Google Play
+DOMAIN-SUFFIX,xn--ngstr-lra8j.com
+DOMAIN-SUFFIX,services.googleapis.cn
 # 煎蛋
 DOMAIN-SUFFIX,jandan.net
 # 其乐社区
