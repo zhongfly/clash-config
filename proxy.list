@@ -1,7 +1,7 @@
 DOMAIN-SUFFIX,dmhy.org
 # google play
-DOMAIN-SUFFIX,xn--ngstr-lra8j.com
-DOMAIN-SUFFIX,services.googleapis.cn
+# DOMAIN-SUFFIX,xn--ngstr-lra8j.com
+# DOMAIN-SUFFIX,services.googleapis.cn
 # Steam
 # DOMAIN-SUFFIX,steampowered.com
 # DOMAIN-SUFFIX,steamgames.com
