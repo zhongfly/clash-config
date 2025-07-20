@@ -44,7 +44,7 @@ lazy = false
 [[custom_groups]]
 name = "自动选择"
 type = "url-test"
-rule = ["(^(?!.*(?i:\\s\\d+x|朝鲜|尼日利亚|warp|WARP|Oracle|Aeza|新疆|直连|0\\.\\d)).*)"]
+rule = ["(^(?!.*(?i:\\s\\d+x)).*)"]
 url = "http://www.gstatic.com/generate_204"
 interval = 60
 tolerance = 50
