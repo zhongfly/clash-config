@@ -123,13 +123,16 @@ rule = ["[]🚀 节点选择",
 # 个人规则
 [[rulesets]]
 group = "🎯 全球直连"
-ruleset = "https://raw.githubusercontent.com/zhongfly/clash-config/master/Direct.list"
+ruleset = "https://raw.githubusercontent.com/zhongfly/clash-config/master/Direct.yaml"
+type = "clash-classic"
 [[rulesets]]
 group = "🚀 节点选择"
-ruleset = "https://raw.githubusercontent.com/zhongfly/clash-config/master/proxy.list"
+ruleset = "https://raw.githubusercontent.com/zhongfly/clash-config/master/proxy.yaml"
+type = "clash-classic"
 [[rulesets]]
 group = "📖 漫画"
-ruleset = "https://raw.githubusercontent.com/zhongfly/clash-config/master/comic.list"
+ruleset = "https://raw.githubusercontent.com/zhongfly/clash-config/master/comic.yaml"
+type = "clash-classic"
 [[rulesets]]
 group = "📺 哔哩哔哩海外"
 ruleset = "[]GEOSITE,biliintl"
@@ -286,3 +289,4 @@ emoji = "🇹🇷"
 [[emoji]]
 match = "(?i:HK|Hong.*?Kong|HKT|HKBN|HGC|WTT|CMI|港)"
 emoji = "🇭🇰"
+
