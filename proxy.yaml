@@ -1,0 +1,14 @@
+payload:
+- DOMAIN-SUFFIX,dmhy.org
+- DOMAIN,downloadly.ir
+# pica
+- DOMAIN-SUFFIX,picacomic.com
+# jsdelivr
+- DOMAIN,cdn.jsdelivr.net
+# qbittorrent
+- DOMAIN-SUFFIX,qbittorrent.org
+# 蜜柑计划
+- DOMAIN,mikanani.me
+- DOMAIN,kp.m-team.cc
+# google
+- DOMAIN-SUFFIX,googleapis.cn
