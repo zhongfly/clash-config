@@ -1,0 +1,29 @@
+payload:
+# IPv6
+# IP-CIDR6,::/0
+#直连进程
+- PROCESS-NAME,QQ.exe
+- PROCESS-NAME,TXPlatform.exe
+- PROCESS-NAME,WeChat.exe
+- PROCESS-NAME,WeChatApp.exe
+- PROCESS-NAME,WeChatWeb.exe
+- PROCESS-NAME,QQScLauncher.exe
+# Google Play
+- DOMAIN-SUFFIX,xn--ngstr-lra8j.com
+- DOMAIN-SUFFIX,services.googleapis.cn
+# 煎蛋
+- DOMAIN-SUFFIX,jandan.net
+# 其乐社区
+- DOMAIN-SUFFIX,keylol.com
+# 轻书架
+- DOMAIN-SUFFIX,acgdmzy.com
+# tracker
+- DOMAIN-KEYWORD,announce
+- DOMAIN-KEYWORD,tracker
+# byr
+- DOMAIN-SUFFIX, byr.su
+# 八叉
+- DOMAIN-SUFFIX,8xsk.org
+- DOMAIN-SUFFIX,833330.xyz
+# acgrip
+- DOMAIN-SUFFIX,acgrip.com
