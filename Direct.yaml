@@ -27,6 +27,5 @@ payload:
 - DOMAIN-SUFFIX,833330.xyz
 # acgrip
 - DOMAIN-SUFFIX,acgrip.com
-- DOMAIN-SUFFIX,linux.do
 - DOMAIN-SUFFIX,elysia.h-e.top
 - DOMAIN,challenges.cloudflare.com
