@@ -44,7 +44,7 @@ lazy = false
 [[custom_groups]]
 name = "自动选择"
 type = "url-test"
-rule = ["(^(?!\\dx|.*(?i:0\\.\\d|直连)))"]
+rule = ["^(?!\d+x)(?!.*(?i:0\\.\\d|直连)).*"]
 url = "http://www.gstatic.com/generate_204"
 interval = 60
 tolerance = 50
@@ -289,6 +289,7 @@ emoji = "🇹🇷"
 [[emoji]]
 match = "(?i:HK|Hong.*?Kong|HKT|HKBN|HGC|WTT|CMI|港)"
 emoji = "🇭🇰"
+
 
 
 
