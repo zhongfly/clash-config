@@ -63,6 +63,7 @@ external-controller: '127.0.0.1:55555'
 hosts:
  'pub.taptapdada.com': 127.0.0.1
  'pub.xmxdev.com': 127.0.0.1
+ 'www.sky.weyolo.com': 120.232.220.162
 # '.dev': 127.0.0.1
 # 'alpha.clash.dev': '::1'
 
@@ -105,6 +106,8 @@ dns:
     "geosite:geolocation-!cn":
      - https://dns.nextdns.io/5d264d
      - https://cloudflare-dns.com/dns-query
+    "geosite:private":
+     - system
 
 tun:
   enable: false
