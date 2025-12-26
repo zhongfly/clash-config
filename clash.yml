@@ -63,8 +63,6 @@ external-controller: '127.0.0.1:55555'
 hosts:
  'pub.taptapdada.com': 127.0.0.1
  'pub.xmxdev.com': 127.0.0.1
- 'www.sky.weyolo.com': 165.101.123.7
- '120.232.220.162': 165.101.123.7
 # '.dev': 127.0.0.1
 # 'alpha.clash.dev': '::1'
 
