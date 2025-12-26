@@ -77,28 +77,28 @@ rule = [
     "(^(?!.*(?i:JP|Japan|Tokyo|Osaka|Saitama|日本|东京|大阪|埼玉|[^-]日)).*)"
 ]
 
-[[custom_groups]]
-name = "📺 哔哩哔哩"
-type = "select"
-rule = [
-        "[]🎯 全球直连",
-        "(?i:TW|Taiwan|台湾|[^-]台|新北|彰化)",
-        "(?i:HK|Hong.*?Kong|香港|[^-]港)",
-        "(?i:Macao|澳门)",
-        "(?i:SG|Singapore|新加坡|狮城|[^-]新)",
-        "(?i:\\bTH\\b|Thailand|泰国)",
-        "[]🚀 节点选择"
-]
+# [[custom_groups]]
+# name = "📺 哔哩哔哩"
+# type = "select"
+# rule = [
+#         "[]🎯 全球直连",
+#         "(?i:TW|Taiwan|台湾|[^-]台|新北|彰化)",
+#         "(?i:HK|Hong.*?Kong|香港|[^-]港)",
+#         "(?i:Macao|澳门)",
+#         "(?i:SG|Singapore|新加坡|狮城|[^-]新)",
+#         "(?i:\\bTH\\b|Thailand|泰国)",
+#         "[]🚀 节点选择"
+# ]
 
-[[custom_groups]]
-name = "📺 哔哩哔哩海外"
-type = "select"
-rule = [
-        "(?i:SG|Singapore|新加坡|狮城|[^-]新)",
-        "(?i:\\bTH\\b|Thailand|泰国)",
-        "[]🚀 节点选择",
-        "[]🎯 全球直连"
-]
+# [[custom_groups]]
+# name = "📺 哔哩哔哩海外"
+# type = "select"
+# rule = [
+#         "(?i:SG|Singapore|新加坡|狮城|[^-]新)",
+#         "(?i:\\bTH\\b|Thailand|泰国)",
+#         "[]🚀 节点选择",
+#         "[]🎯 全球直连"
+# ]
 
 [[custom_groups]]
 name = "🎯 全球直连"
@@ -133,16 +133,16 @@ type = "clash-classic"
 group = "📖 漫画"
 ruleset = "https://raw.githubusercontent.com/zhongfly/clash-config/master/comic.yaml"
 type = "clash-classic"
-[[rulesets]]
-group = "📺 哔哩哔哩海外"
-ruleset = "[]GEOSITE,biliintl"
-# ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/biliintl.yaml"
-# type = "clash-domain"
-[[rulesets]]
-group = "📺 哔哩哔哩"
-ruleset = "[]GEOSITE,bilibili"
-# ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/bilibili.yaml"
-# type = "clash-domain"
+# [[rulesets]]
+# group = "📺 哔哩哔哩海外"
+# ruleset = "[]GEOSITE,biliintl"
+# # ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/biliintl.yaml"
+# # type = "clash-domain"
+# [[rulesets]]
+# group = "📺 哔哩哔哩"
+# ruleset = "[]GEOSITE,bilibili"
+# # ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/bilibili.yaml"
+# # type = "clash-domain"
 
 [[rulesets]]
 group = "🎯 全球直连"
@@ -289,6 +289,7 @@ emoji = "🇹🇷"
 [[emoji]]
 match = "(?i:HK|Hong.*?Kong|HKT|HKBN|HGC|WTT|CMI|港)"
 emoji = "🇭🇰"
+
 
 
 
