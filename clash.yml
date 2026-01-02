@@ -104,11 +104,11 @@ dns:
     - 'www.msftconnecttest.com'
   nameserver-policy:
     'linux.do,+.linux.do': 
-      - https://ld.ddd.oaifree.com/query-dns
+     - https://ld.ddd.oaifree.com/query-dns
     "geosite:geolocation-!cn":
      - https://dns.nextdns.io/5d264d
      - https://cloudflare-dns.com/dns-query
-     - https://cc.ss.oaifree.com/query-dns
+     - https://ld.ddd.oaifree.com/query-dns
     "geosite:private":
      - system
 
