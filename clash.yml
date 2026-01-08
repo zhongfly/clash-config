@@ -102,11 +102,6 @@ dns:
     - 'www.msftncsi.com'
     - 'www.msftconnecttest.com'
   nameserver-policy:
-    "+.linux.do,linux.do":
-     - https://cloudflare-dns.com/dns-query
-     - https://v.recipes/dns-cn
-     - https://api.chibanban.de/api/paas/v4/chat/completions/gemini
-     - https://wj7410uwnh.cloudflare-gateway.com/dns-query
     "geosite:geolocation-!cn":
      - https://cloudflare-dns.com/dns-query
      - https://v.recipes/dns-cn
