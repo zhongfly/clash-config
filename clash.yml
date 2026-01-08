@@ -103,8 +103,9 @@ dns:
     - 'www.msftconnecttest.com'
   nameserver-policy:
     "geosite:geolocation-!cn":
-     - https://dns.nextdns.io/5d264d
      - https://cloudflare-dns.com/dns-query
+     - https://v.recipes/dns-cn
+     - https://wj7410uwnh.cloudflare-gateway.com/dns-query
     "geosite:private":
      - system
 
