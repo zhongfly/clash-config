@@ -24,7 +24,7 @@ exclude_remarks = ["(流量|时间|产品|免费|耗尽|到期|订阅|更新|剩
 name = "🚀 节点选择"
 type = "select"
 rule = [
-    "[]♻️ 自动",,
+    "[]♻️ 自动",
     "[]🎯 全球直连",
     ".*"
 ]
@@ -298,6 +298,7 @@ emoji = "🇹🇷"
 [[emoji]]
 match = "(?i:HK|Hong.*?Kong|HKT|HKBN|HGC|WTT|CMI|港)"
 emoji = "🇭🇰"
+
 
 
 
