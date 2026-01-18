@@ -61,7 +61,6 @@ type = "select"
 rule = [
     "[]✴️ 负载均衡",
     "[]🚀 节点选择",
-    "[]自动选择",
     "[]🎯 全球直连",
     "(^(?!.*(?i:JP|Japan|Tokyo|Osaka|Saitama|日本|东京|大阪|埼玉|[^-]日)).*)"
 ]
@@ -298,3 +297,4 @@ emoji = "🇹🇷"
 [[emoji]]
 match = "(?i:HK|Hong.*?Kong|HKT|HKBN|HGC|WTT|CMI|港)"
 emoji = "🇭🇰"
+
