@@ -24,25 +24,13 @@ exclude_remarks = ["(流量|时间|产品|免费|耗尽|到期|订阅|更新|剩
 name = "🚀 节点选择"
 type = "select"
 rule = [
-    "[]♻️ 自动",
-    "[]自动选择",
+    "[]♻️ 自动",,
     "[]🎯 全球直连",
     ".*"
 ]
 
 [[custom_groups]]
 name = "♻️ 自动"
-type = "fallback"
-rule = [
-    "[]低倍率自动选择",
-    "[]自动选择",
-]
-url = "http://www.gstatic.com/generate_204"
-interval = 30
-lazy = false
-
-[[custom_groups]]
-name = "自动选择"
 type = "url-test"
 rule = ["(^(?!.*(?i:0\\.\\d|直连|\\dx)).*)"]
 url = "http://www.gstatic.com/generate_204"
@@ -50,21 +38,22 @@ interval = 60
 tolerance = 50
 
 [[custom_groups]]
-name = "低倍率自动选择"
+name = "🤖 AI"
+type = "select"
+rule = [
+    "[]♻️ 境外",
+    "[]♻️ 自动",
+    "[]🚀 节点选择",
+    ".*"
+]
+
+[[custom_groups]]
+name = "♻️ 自动"
 type = "url-test"
-rule = ["(?i:0\\.\\d)"]
+rule = ["(^(?!.*(?i:直连|\\dx)).*)"]
 url = "http://www.gstatic.com/generate_204"
 interval = 60
 tolerance = 50
-lazy = false
-
-[[custom_groups]]
-name = "✴️ 负载均衡"
-type = "load-balance"
-rule = ["(^(?!.*(?i:JP|Japan|Tokyo|Osaka|Saitama|日本|东京|大阪|埼玉|[^-]日)).*)"]
-interval = 60
-strategy = "round-robin"
-url = "http://www.gstatic.com/generate_204"
 
 [[custom_groups]]
 name = "📖 漫画"
@@ -76,6 +65,22 @@ rule = [
     "[]🎯 全球直连",
     "(^(?!.*(?i:JP|Japan|Tokyo|Osaka|Saitama|日本|东京|大阪|埼玉|[^-]日)).*)"
 ]
+
+[[custom_groups]]
+name = "✴️ 负载均衡"
+type = "load-balance"
+rule = ["(^(?!.*(?i:JP|Japan|Tokyo|Osaka|Saitama|日本|东京|大阪|埼玉|[^-]日)).*)"]
+interval = 60
+strategy = "round-robin"
+url = "http://www.gstatic.com/generate_204"
+
+[[custom_groups]]
+name = "♻️ 境外"
+type = "url-test"
+rule = ["(^(?!.*(?i:HK|香港|MO|澳门|直连|\\dx)).*)"]
+url = "http://www.gstatic.com/generate_204"
+interval = 60
+tolerance = 50
 
 # [[custom_groups]]
 # name = "📺 哔哩哔哩"
@@ -173,6 +178,10 @@ group = "🚀 节点选择"
 ruleset = "[]GEOSITE,google@cn"
 # ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google@cn.yaml"
 # type = "clash-domain"
+
+[[rulesets]]
+group = "🤖 AI"
+ruleset = "[]GEOSITE,category-ai-!cn"
 
 # 代理
 [[rulesets]]
@@ -289,6 +298,7 @@ emoji = "🇹🇷"
 [[emoji]]
 match = "(?i:HK|Hong.*?Kong|HKT|HKBN|HGC|WTT|CMI|港)"
 emoji = "🇭🇰"
+
 
 
 
