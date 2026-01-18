@@ -298,20 +298,3 @@ emoji = "🇹🇷"
 [[emoji]]
 match = "(?i:HK|Hong.*?Kong|HKT|HKBN|HGC|WTT|CMI|港)"
 emoji = "🇭🇰"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
