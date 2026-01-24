@@ -12,3 +12,4 @@ payload:
 - DOMAIN,kp.m-team.cc
 # google
 - DOMAIN-SUFFIX,googleapis.cn
+- DOMAIN,codeload.github.com
