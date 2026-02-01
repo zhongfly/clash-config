@@ -17,7 +17,7 @@ remove_old_emoji = true
 
 # Options for filtering nodes
 #include_remarks = []
-exclude_remarks = ["(流量|时间|产品|免费|耗尽|到期|订阅|更新|剩余|可用|当前)","^(官网|群组|频道)","IPv6测试节点","wuan|HKIX@Bosa"]
+exclude_remarks = ["(流量|时间|产品|免费|耗尽|到期|订阅|更新|剩余|可用|当前|卡顿)","^(官网|群组|频道)","IPv6测试节点","wuan|HKIX@Bosa"]
 
 # 设置分组标志位
 [[custom_groups]]
@@ -50,7 +50,7 @@ rule = [
 [[custom_groups]]
 name = "♻️ 自动"
 type = "url-test"
-rule = ["(^(?!.*(?i:直连|\\dx)).*)"]
+rule = ["(^(?!.*(?i:直连|\\b([3-9]|[1-9]\\d+)(\\.\\d+)?x)).*)"]
 url = "http://www.gstatic.com/generate_204"
 interval = 60
 tolerance = 50
@@ -76,33 +76,10 @@ url = "http://www.gstatic.com/generate_204"
 [[custom_groups]]
 name = "♻️ 境外"
 type = "url-test"
-rule = ["(^(?!.*(?i:HK|香港|MO|澳门|直连|\\dx)).*)"]
+rule = ["(^(?!.*(?i:HK|香港|MO|澳门|直连|\\b([4-9]|[1-9]\\d+)(\\.\\d+)?x)).*)"]
 url = "http://www.gstatic.com/generate_204"
 interval = 60
 tolerance = 50
-
-# [[custom_groups]]
-# name = "📺 哔哩哔哩"
-# type = "select"
-# rule = [
-#         "[]🎯 全球直连",
-#         "(?i:TW|Taiwan|台湾|[^-]台|新北|彰化)",
-#         "(?i:HK|Hong.*?Kong|香港|[^-]港)",
-#         "(?i:Macao|澳门)",
-#         "(?i:SG|Singapore|新加坡|狮城|[^-]新)",
-#         "(?i:\\bTH\\b|Thailand|泰国)",
-#         "[]🚀 节点选择"
-# ]
-
-# [[custom_groups]]
-# name = "📺 哔哩哔哩海外"
-# type = "select"
-# rule = [
-#         "(?i:SG|Singapore|新加坡|狮城|[^-]新)",
-#         "(?i:\\bTH\\b|Thailand|泰国)",
-#         "[]🚀 节点选择",
-#         "[]🎯 全球直连"
-# ]
 
 [[custom_groups]]
 name = "🎯 全球直连"
@@ -137,16 +114,6 @@ type = "clash-classic"
 group = "📖 漫画"
 ruleset = "https://raw.githubusercontent.com/zhongfly/clash-config/master/comic.yaml"
 type = "clash-classic"
-# [[rulesets]]
-# group = "📺 哔哩哔哩海外"
-# ruleset = "[]GEOSITE,biliintl"
-# # ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/biliintl.yaml"
-# # type = "clash-domain"
-# [[rulesets]]
-# group = "📺 哔哩哔哩"
-# ruleset = "[]GEOSITE,bilibili"
-# # ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/bilibili.yaml"
-# # type = "clash-domain"
 
 [[rulesets]]
 group = "🎯 全球直连"
@@ -297,4 +264,5 @@ emoji = "🇹🇷"
 [[emoji]]
 match = "(?i:HK|Hong.*?Kong|HKT|HKBN|HGC|WTT|CMI|港)"
 emoji = "🇭🇰"
+
 
