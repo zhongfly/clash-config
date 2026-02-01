@@ -26,7 +26,7 @@ payload:
 - DOMAIN-SUFFIX,8xsk.org
 - DOMAIN-SUFFIX,833330.xyz
 # acgrip
-- DOMAIN-SUFFIX,acgrip.com
+- DOMAIN,bbs.acgrip.com
 #ai
 - DOMAIN-SUFFIX,dev88.tech
 - DOMAIN-SUFFIX,elysia.h-e.top
