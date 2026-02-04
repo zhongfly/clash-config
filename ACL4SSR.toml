@@ -32,7 +32,7 @@ rule = [
 [[custom_groups]]
 name = "♻️ 自动"
 type = "url-test"
-rule = ["(^(?!.*(?i:\\b([3-9]|[1-9]\\d+)(\\.\\d+)?x)).*)"]
+rule = ["(^(?!.*(?i:\\b([6-9]|[1-9]\\d+)(\\.\\d+)?x|日本)).*)"]
 url = "http://www.gstatic.com/generate_204"
 interval = 60
 tolerance = 50
@@ -256,6 +256,7 @@ emoji = "🇹🇷"
 [[emoji]]
 match = "(?i:HK|Hong.*?Kong|HKT|HKBN|HGC|WTT|CMI|港)"
 emoji = "🇭🇰"
+
 
 
 
