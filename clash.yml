@@ -111,7 +111,7 @@ dns:
       - https://cloudflare-dns.com/dns-query#disable-ipv6=true
       - https://doh.pub/dns-query#disable-ipv6=true
       - https://dns.alidns.com/dns-query#disable-ipv6=true
-    "geosite:geolocation-!cn,*linux.do":
+    "geosite:geolocation-!cn":
      - https://cloudflare-dns.com/dns-query
      - https://v.recipes/dns-cn
      - https://api.chibanban.de/api/paas/v4/chat/completions/gemini
