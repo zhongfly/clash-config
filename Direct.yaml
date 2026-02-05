@@ -28,7 +28,6 @@ payload:
 # acgrip
 - DOMAIN,bbs.acgrip.com
 #ai
-- DOMAIN-SUFFIX,linux.do
 - DOMAIN-SUFFIX,dev88.tech
 - DOMAIN-SUFFIX,elysia.h-e.top
 - DOMAIN-SUFFIX,kfc-api.sxxe.net
