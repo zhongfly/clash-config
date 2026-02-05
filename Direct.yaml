@@ -28,12 +28,14 @@ payload:
 # acgrip
 - DOMAIN,bbs.acgrip.com
 #ai
+- DOMAIN-SUFFIX,linux.do
 - DOMAIN-SUFFIX,dev88.tech
 - DOMAIN-SUFFIX,elysia.h-e.top
 - DOMAIN-SUFFIX,kfc-api.sxxe.net
 - DOMAIN,challenges.cloudflare.com
 - DOMAIN-SUFFIX,chibanban.de
 - DOMAIN,wzw.pp.ua
+- DOMAIN,wzw.de5.net
 - DOMAIN,runanytime.hxi.me
 - DOMAIN,ai.huan666.de
 - DOMAIN,api.wpgzs.top
