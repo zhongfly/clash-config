@@ -71,7 +71,7 @@ type = "load-balance"
 rule = ["(^(?!.*(?i:HK|香港|MO|澳门|\\b([4-9]|[1-9]\\d+)(\\.\\d+)?x)).*)"]
 url = "http://www.gstatic.com/generate_204"
 interval = 60
-strategy = "consistent-hashing"
+strategy = "sticky-sessions"
 
 [[custom_groups]]
 name = "🎯 全球直连"
@@ -256,6 +256,7 @@ emoji = "🇹🇷"
 [[emoji]]
 match = "(?i:HK|Hong.*?Kong|HKT|HKBN|HGC|WTT|CMI|港)"
 emoji = "🇭🇰"
+
 
 
 
