@@ -8,6 +8,7 @@ payload:
 - PROCESS-NAME,WeChatApp.exe
 - PROCESS-NAME,WeChatWeb.exe
 - PROCESS-NAME,QQScLauncher.exe
+- DOMAIN-SUFFIX,localsend.org
 # Google Play
 - DOMAIN-SUFFIX,xn--ngstr-lra8j.com
 - DOMAIN-SUFFIX,services.googleapis.cn
