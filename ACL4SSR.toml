@@ -2,6 +2,7 @@ version = 1
 [custom]
 enable_rule_generator = true
 overwrite_original_rules = true
+skip_failed_links = true
 
 # Options for custom base configuration file
 clash_rule_base = "https://raw.githubusercontent.com/zhongfly/clash-config/master/clash.yml"
@@ -256,12 +257,3 @@ emoji = "🇹🇷"
 [[emoji]]
 match = "(?i:HK|Hong.*?Kong|HKT|HKBN|HGC|WTT|CMI|港)"
 emoji = "🇭🇰"
-
-
-
-
-
-
-
-
-
