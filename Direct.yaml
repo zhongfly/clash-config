@@ -23,23 +23,15 @@ payload:
 - DOMAIN-KEYWORD,tracker
 # byr
 - DOMAIN-SUFFIX, byr.su
-# 八叉
-- DOMAIN-SUFFIX,8xsk.org
-- DOMAIN-SUFFIX,833330.xyz
+# 可直连
+- DOMAIN,challenges.cloudflare.com
+- DOMAIN,codeload.github.com
+- DOMAIN,zmh.shadows.de5.net
 # acgrip
 - DOMAIN,bbs.acgrip.com
 #ai
-- DOMAIN-SUFFIX,dev88.tech
 - DOMAIN-SUFFIX,elysia.h-e.top
 - DOMAIN-SUFFIX,kfc-api.sxxe.net
-- DOMAIN,challenges.cloudflare.com
-- DOMAIN-SUFFIX,chibanban.de
 - DOMAIN-SUFFIX,hybgzs.com
-- DOMAIN,wzw.pp.ua
-- DOMAIN,wzw.de5.net
+- DOMAIN-SUFFIX,sharedchat.cc
 - DOMAIN,runanytime.hxi.me
-- DOMAIN,ai.huan666.de
-- DOMAIN,api.wpgzs.top
-- DOMAIN,team.yeelovo.com
-- DOMAIN,codeload.github.com
-- DOMAIN,zmh.shadows.de5.net
