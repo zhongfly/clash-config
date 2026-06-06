@@ -24,7 +24,7 @@ payload:
 # byr
 - DOMAIN-SUFFIX, byr.su
 # 可直连
-- DOMAIN,challenges.cloudflare.com
+# - DOMAIN,challenges.cloudflare.com
 - DOMAIN,codeload.github.com
 - DOMAIN,zmh.shadows.de5.net
 # acgrip
