@@ -13,3 +13,5 @@ payload:
 # google
 - DOMAIN-SUFFIX,googleapis.cn
 - DOMAIN-SUFFIX,zhuozaiya.top
+#ai
+- DOMAIN-SUFFIX,mouubox.com
